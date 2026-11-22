@@ -13,6 +13,8 @@
     "format:check": "oxfmt --check"
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.38.0",
+    "@emotion/react": "^11.14.0",
     "@tanstack/react-router": "^1.170.46",
     "react": "~19.2.9",
     "react-dom": "~19.2.9"
