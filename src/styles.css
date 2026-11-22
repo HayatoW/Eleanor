@@ -37,7 +37,7 @@ a {
 }
 
 .brand,
-.site-header nav [aria-current="page"] {
+.site-header nav [aria-current='page'] {
   font-weight: 700;
 }
 

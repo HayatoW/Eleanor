@@ -16,6 +16,9 @@ npm run dev
 - `npm run typecheck`: TypeScript の型チェック
 - `npm run build`: 型チェックと本番ビルド（出力先: `dist/`）
 - `npm run preview`: ビルド結果をローカルで確認
+- `npm run lint`: oxlint による静的解析（警告もエラー扱い）
+- `npm run format`: oxfmt でコードを整形
+- `npm run format:check`: 整形済みかを確認
 
 ## ルーティング
 
