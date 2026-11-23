@@ -1,9 +1,9 @@
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router'
+import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
   component: RootLayout,
   notFoundComponent: NotFound,
-})
+});
 
 function RootLayout() {
   return (
@@ -23,7 +23,7 @@ function RootLayout() {
         <Outlet />
       </main>
     </>
-  )
+  );
 }
 
 function NotFound() {
@@ -33,5 +33,5 @@ function NotFound() {
       <p>This page does not exist.</p>
       <Link to="/">Back to home</Link>
     </>
-  )
+  );
 }
