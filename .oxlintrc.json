@@ -17,6 +17,5 @@
   "env": {
     "builtin": true,
     "browser": true
-  },
-  "ignorePatterns": ["src/routeTree.gen.ts"]
+  }
 }
