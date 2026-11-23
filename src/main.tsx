@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 
 import { routeTree } from "./routeTree.gen";
 import "./styles.css";
@@ -15,6 +16,8 @@ declare module "@tanstack/react-router" {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ChakraProvider value={defaultSystem}>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   </StrictMode>,
 );
