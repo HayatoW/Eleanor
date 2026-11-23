@@ -1,11 +1,11 @@
-import { Button, Heading, Stack, Text } from '@chakra-ui/react'
-import { Link, createRootRoute } from '@tanstack/react-router'
-import { Layout } from '../Layout'
+import { Button, Heading, Stack, Text } from "@chakra-ui/react";
+import { Link, createRootRoute } from "@tanstack/react-router";
+import { Layout } from "../Layout";
 
 export const Route = createRootRoute({
   component: Layout,
   notFoundComponent: NotFound,
-})
+});
 
 function NotFound() {
   return (
@@ -18,5 +18,5 @@ function NotFound() {
         <Link to="/">Back to home</Link>
       </Button>
     </Stack>
-  )
+  );
 }

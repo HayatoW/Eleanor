@@ -1,5 +1,5 @@
-import { Box, Container, Flex, HStack, Link, Text } from '@chakra-ui/react'
-import { Link as RouterLink, Outlet } from '@tanstack/react-router'
+import { Box, Container, Flex, HStack, Link, Text } from "@chakra-ui/react";
+import { Link as RouterLink, Outlet } from "@tanstack/react-router";
 
 export function Layout() {
   return (
@@ -19,7 +19,7 @@ export function Layout() {
               </RouterLink>
             </Link>
             <HStack as="nav" aria-label="Main navigation" gap="7">
-              {(['/', '/about'] as const).map((to) => (
+              {(["/", "/about"] as const).map((to) => (
                 <Link
                   key={to}
                   asChild
@@ -27,13 +27,13 @@ export function Layout() {
                   fontSize="sm"
                   fontWeight="medium"
                   _currentPage={{
-                    color: 'brand.fg',
-                    textDecoration: 'underline',
-                    textUnderlineOffset: '8px',
+                    color: "brand.fg",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "8px",
                   }}
                 >
                   <RouterLink to={to} activeOptions={{ exact: true }}>
-                    {to === '/' ? 'Home' : 'About'}
+                    {to === "/" ? "Home" : "About"}
                   </RouterLink>
                 </Link>
               ))}
@@ -41,7 +41,7 @@ export function Layout() {
           </Flex>
         </Container>
       </Box>
-      <Container as="main" id="main-content" maxW="6xl" flex="1" py={{ base: '12', md: '20' }}>
+      <Container as="main" id="main-content" maxW="6xl" flex="1" py={{ base: "12", md: "20" }}>
         <Outlet />
       </Container>
       <Box as="footer" borderTopWidth="1px" borderColor="line">
@@ -55,5 +55,5 @@ export function Layout() {
         </Container>
       </Box>
     </Flex>
-  )
+  );
 }

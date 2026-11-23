@@ -1,10 +1,10 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { Link } from '@tanstack/react-router'
-import { Box, Button, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
+import { Box, Button, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 
-export const Route = createFileRoute('/about')({
+export const Route = createFileRoute("/about")({
   component: About,
-})
+});
 
 function About() {
   return (
@@ -19,7 +19,7 @@ function About() {
         >
           About Eleanor
         </Text>
-        <Heading as="h1" fontSize={{ base: '5xl', md: '6xl' }} lineHeight="1.1" fontWeight="normal">
+        <Heading as="h1" fontSize={{ base: "5xl", md: "6xl" }} lineHeight="1.1" fontWeight="normal">
           A small beginning.
           <br />
           An open horizon.
@@ -31,7 +31,7 @@ function About() {
       </Stack>
       <SimpleGrid
         columns={{ base: 1, md: 2 }}
-        gap={{ base: '8', md: '16' }}
+        gap={{ base: "8", md: "16" }}
         borderTopWidth="1px"
         borderColor="line"
         pt="10"
@@ -51,7 +51,7 @@ function About() {
           </Text>
         </Stack>
       </SimpleGrid>
-      <Box bg="brand.900" color="white" p={{ base: '8', md: '12' }} borderRadius="3xl">
+      <Box bg="brand.900" color="white" p={{ base: "8", md: "12" }} borderRadius="3xl">
         <Stack gap="5" align="start">
           <Text fontSize="xs" letterSpacing="widest" textTransform="uppercase" color="brand.200">
             Room for what’s next
@@ -68,7 +68,7 @@ function About() {
             color="brand.900"
             borderRadius="full"
             mt="2"
-            _hover={{ bg: 'brand.200' }}
+            _hover={{ bg: "brand.200" }}
           >
             <Link to="/">
               Back to home <span aria-hidden="true">↗</span>
@@ -77,5 +77,5 @@ function About() {
         </Stack>
       </Box>
     </Stack>
-  )
+  );
 }
